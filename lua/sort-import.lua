@@ -60,7 +60,8 @@ function M.sort_import(async)
 end
 
 function M.setup()
-  nvim.command [[command! Sort lua require'sort-import'.sort_import(true)]]
+  vim.cmd 'command! SortImport lua require"sort-import".sort_import()'
 end
+
 
 return M
